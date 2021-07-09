@@ -19,14 +19,10 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
 
 export default function SimpleList() {
     const classes = useStyles();
 
-    const preventDefault = (event) => event.preventDefault();
     return (
         <div className={classes.root}>
             <List component="nav" aria-label="main mailbox folders">
